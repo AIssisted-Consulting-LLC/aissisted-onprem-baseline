@@ -1,0 +1,35 @@
+# macOS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local env / secrets
+.env
+.env.*
+!.env.template
+
+# Logs and temp files
+*.log
+.tmp/
+tmp/
+.cache/
+
+# Archive / backup artifacts
+*.bak
+*.backup
+*.orig
+
+# Node / package manager artifacts
+node_modules/
+.npm/
+
+# Python artifacts
+__pycache__/
+*.pyc
+
+# OS metadata
+Thumbs.db

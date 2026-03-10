@@ -295,6 +295,7 @@ Use equivalents if your tooling differs.
 - `checklists/handoff-policy.md` — who may change what
 - `configs/examples/.env.template` — example variables only
 - `configs/examples/safe-defaults.md` — conservative baseline settings
+- `examples/real-world-example-ocala-msp-internal-helpdesk.md` — sanitized small-team deployment pattern
 - `ops/logging-and-metrics.md` — what to log and alert on
 - `ops/rollback-playbook.md` — how to revert without panic
 - `CONTACT.md` — if you want help implementing this
