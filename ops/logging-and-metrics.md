@@ -53,6 +53,20 @@ The point of observability is to answer operator questions fast.
 - backup failure
 - index build failure
 
+## Suggested starting thresholds (tune to your environment)
+
+These are conservative defaults meant to catch "boring" outages early. Adjust after you have a week of baseline data.
+
+- **Disk free:** alert at < 15% (warning) and < 10% (critical)
+- **CPU pressure:** sustained > 85% for 10 minutes (warning), > 95% for 5 minutes (critical)
+- **Memory pressure / swap:** any sustained swap activity or OOM events = critical
+- **Queue delay:** p95 queue delay > 30s (warning), > 2m (critical)
+- **Tool timeouts:** > 3 timeouts for the same tool in 10 minutes (warning), > 10 (critical)
+- **Provider errors:** 429/5xx rate > 2% over 5 minutes (warning), > 10% (critical)
+- **Restarts:** > 2 restarts in 30 minutes (warning), > 5 (critical)
+- **Backup:** any scheduled backup missed = warning; 2 consecutive misses = critical
+- **Index build:** failure to complete within your normal window (or any repeated failure) = warning/critical depending on impact
+
 ## Logging mistakes
 
 ### Logging too little
