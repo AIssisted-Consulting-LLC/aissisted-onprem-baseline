@@ -54,9 +54,11 @@ Use this before any production rollout.
 - [ ] Structured logs enabled
 - [ ] Correlation ID available per request
 - [ ] Tool execution logs enabled
+- [ ] Prompt and tool-output logging scope is defined (what is stored vs redacted)
 - [ ] Auth failure logs retained
 - [ ] Alerts exist for process down, disk pressure, and provider failure spikes
 - [ ] Log retention rule is defined
+- [ ] PII handling is defined (redaction, retention, access)
 
 ## Backups and rollback
 
