@@ -6,6 +6,14 @@ This repo is for SMB operators, local-first teams, and IT consultants who need a
 
 If you want the short version: keep the control plane local, keep secrets out of prompts, narrow tool access, log enough to debug, and make rollback boring.
 
+## Quick links
+
+- Deployment: [deployment checklist](checklists/deployment-checklist.md)
+- RAG: [RAG quality checklist](checklists/rag-quality-checklist.md)
+- Ops: [logging and metrics](ops/logging-and-metrics.md)
+- Ops: [rollback playbook](ops/rollback-playbook.md)
+- Operations: [handoff policy](checklists/handoff-policy.md)
+
 ## Who this is for
 
 - Small businesses that want local-first or self-hosted agent workflows
