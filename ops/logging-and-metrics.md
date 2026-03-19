@@ -67,6 +67,19 @@ These are conservative defaults meant to catch "boring" outages early. Adjust af
 - **Backup:** any scheduled backup missed = warning; 2 consecutive misses = critical
 - **Index build:** failure to complete within your normal window (or any repeated failure) = warning/critical depending on impact
 
+## Retention and redaction (boring but critical)
+
+Decide this before go-live, while you still have the leverage to keep it sane.
+
+- **Retention:** pick a default (e.g., 7–30 days) and a reason to keep anything longer.
+- **Redaction:** never log secrets; be intentional about logging prompts, tool args, and tool outputs.
+- **Access:** logs are production data. Restrict who can read them.
+
+Operator-friendly rule of thumb:
+
+- If you would not paste it into a ticket, do not log it.
+- If you must log it to debug, log a hash, ID, or a bounded excerpt.
+
 ## Logging mistakes
 
 ### Logging too little
