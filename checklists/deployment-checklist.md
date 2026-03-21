@@ -79,6 +79,17 @@ Use this before any production rollout.
 - [ ] Restart and reboot behavior tested
 - [ ] Restore from backup tested enough to trust
 
+## Post go-live: first hour checks
+
+Do these right after you turn it on for real users.
+
+- [ ] Confirm logs show real traffic (not just health checks)
+- [ ] Confirm at least one request has a correlation ID end-to-end
+- [ ] Confirm one denial is logged (prove policy is enforced)
+- [ ] Confirm queue depth and p95 latency are within your expected range
+- [ ] Confirm disk free space and log growth rate look normal
+- [ ] Confirm the rollback artifact exists (config snapshot + last-known-good version)
+
 ## Final stop/go question
 
 If this breaks at 7:10 AM tomorrow, who gets paged, what do they check first, and how do they roll back in under 30 minutes?
